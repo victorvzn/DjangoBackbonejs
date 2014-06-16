@@ -1,6 +1,6 @@
 # Basic Project #
 
-Ejemplo usuario Django y Backbone.js
+Ejemplo usando Django y Backbone.js
 
 ### Requirements ###
 
@@ -9,16 +9,17 @@ Ejemplo usuario Django y Backbone.js
 
 ### Create a virtualenv ###
 
-* Usando virtualenv
+* Virtualenv
 
     $ virtualenv env
     $ source env/bin/activate
 
-* Usando virtualenvwrapper
+* Virtualenvwrapper
 
     $ mkvirtualenv env
     $ workon env
+    $ deactivate
 
 ### How to run the project ###
 
-    $ python manage.py runserver --settings=myproject.settings.local
+    $ python manage.py runserver
