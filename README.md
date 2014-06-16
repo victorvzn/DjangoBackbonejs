@@ -1,6 +1,6 @@
 # Basic Project #
 
-Ejemplo usando Django y Backbone.js
+Ejemplo práctico usando Django, Django Rest Framework y Backbone.js.
 
 ### Requirements ###
 
