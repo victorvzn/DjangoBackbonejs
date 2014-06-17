@@ -8,9 +8,35 @@
 </head>
 <body>
 
-<h1>Templates OK</h1>
+<h1>Todo funciona!</h1>
 
-<script src="{% static "js/main.js" %}"></script>
+<script src="{% static "js/libs/underscore.js" %}"></script>
+<script src="{% static "js/libs/jquery.js" %}"></script>
+<script src="{% static "js/libs/backbone.js" %}"></script>
+
+<script src="{% static "js/ajax.js" %}"></script>
+
+<script>
+
+        var Contact = Backbone.Model.extend();
+
+        var Contacts = Backbone.Collection.extend({
+            url: '/api/contacts/'
+        });
+
+        $(function(){
+
+            var contacts = new Contacts();
+
+            contacts.fetch({
+                success: function(data){
+                    console.log(data.toJSON());
+                }
+            });
+
+        });
+
+</script>
 
 </body>
 </html>
